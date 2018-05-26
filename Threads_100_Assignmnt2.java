@@ -10,24 +10,24 @@ package threads_100_assignmnt2;
  * @author herwan
  */
 
-class Hi extends Thread
+class Hello extends Thread
 {
     public void run()
     {
             for(int i=1;i<=100;i++)
             {
-                System.out.println("Hi");
+                System.out.println("Hello");
                 try {Thread.sleep(1000); } catch(Exception e){}
             }
     }
 }
-class Hello extends Thread
+class Welcome extends Thread
 {
 public void run()
     {
             for(int i=1;i<=100;i++)
             {
-                System.out.println("Hello");
+                System.out.println("Welcome");
                 try {Thread.sleep(1000); } catch(Exception e){}
             }
     }
@@ -37,8 +37,8 @@ public class Threads_100_Assignmnt2 {
     
     public static void main(String[] args)
     {
-       Hi obj1 = new Hi();
-       Hello obj2 = new Hello();
+       Hello obj1 = new Hello();
+       Welcome obj2 = new Welcome();
        
        obj1.start();
        try {Thread.sleep(100); } catch(Exception e){}
